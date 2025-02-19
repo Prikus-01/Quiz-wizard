@@ -1,7 +1,7 @@
-#CLone Frontend Folder
+# CLone Frontend Folder
 
-#Run Command to install packages
+# Run Command to install packages
 """ npm intstall"""
 
-#Run Command to start project 
+# Run Command to start project 
 """ npm start """
