@@ -39,6 +39,7 @@ const AttemptQuiz = () => {
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
               🚀 Attempt a Quiz
             </h2>
+         <p> TRY : SAMPLE </p>
             <input
               className="w-full border border-gray-300 rounded-lg p-3 shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none transition"
               placeholder="Enter Quiz ID"
