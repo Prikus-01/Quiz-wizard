@@ -10,7 +10,7 @@ const CreateQuiz = () => {
   const handleSubmit = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/quiz/create", {
+      const response = await fetch("https://quiz-wizard-backend.vercel.app//api/quiz/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: quizData,
