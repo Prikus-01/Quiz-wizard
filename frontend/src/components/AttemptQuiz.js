@@ -17,7 +17,7 @@ const AttemptQuiz = () => {
     setError("");
 
     try {
-      const response = await fetch(`http://localhost:5000/api/quiz/${quizId}`);
+      const response = await fetch(`https://quiz-wizard-backend.vercel.app//api/quiz/${quizId}`);
       if (!response.ok) {
         throw new Error("Quiz not found or invalid Quiz ID");
       }
