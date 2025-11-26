@@ -23,6 +23,12 @@ const Home = () => {
           >
             🚀 Attempt a Quiz
           </Link>
+          <Link
+            to="/ai-quiz"
+            className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 shadow-md transform hover:scale-105"
+          >
+            🚀 AI Quiz
+          </Link>
         </div>
       </div>
     </div>

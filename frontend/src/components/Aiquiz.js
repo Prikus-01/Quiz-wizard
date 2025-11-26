@@ -1,7 +1,10 @@
+import React from 'react'
 import { useState } from "react";
 import Question from "./Question";
 
-const AttemptQuiz = () => {
+
+const Aiquiz = () => {
+
   const [quizId, setQuizId] = useState("");
   const [quiz, setQuiz] = useState(null);
   const [error, setError] = useState("");
@@ -17,7 +20,7 @@ const AttemptQuiz = () => {
     setError("");
 
     try {
-      const response = await fetch(`https://quiz-wizard-backend.onrender.com/api/quiz/${quizId}`);
+      const response = await fetch(`https://quiz-wizard-backend.onrender.com/api/quiz/ai/${quizId}`);
       if (!response.ok) {
         throw new Error("Quiz not found or invalid Quiz ID");
       }
@@ -30,19 +33,19 @@ const AttemptQuiz = () => {
 
     setLoading(false);
   };
-
+  
   return (
     <div className="flex flex-col items-center min-h-screen bg-gradient-to-br justify-center from-purple-100 to-blue-200 p-6">
       <div className="bg-white shadow-lg rounded-xl p-8 max-w-md w-full">
         {quiz === null ? (
           <>
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-              🚀 Attempt a Quiz
+              🚀 Type Any Theme
             </h2>
-         <p> TRY : SAMPLE </p>
+         <p> TRY : INDIA </p>
             <input
               className="w-full border border-gray-300 rounded-lg p-3 shadow-sm focus:ring-2 focus:ring-blue-400 focus:outline-none transition"
-              placeholder="Enter Quiz ID"
+              placeholder="Enter INDIA or any theme"
               value={quizId}
               onChange={(e) => setQuizId(e.target.value)}
             />
@@ -60,7 +63,7 @@ const AttemptQuiz = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AttemptQuiz;
+export default Aiquiz

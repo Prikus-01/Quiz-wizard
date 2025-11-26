@@ -5,6 +5,7 @@ import AttemptQuiz from "./components/AttemptQuiz";
 import CreateQuiz from "./components/CreateQuiz";
 import "./index.css";
 import Home from "./pages/Home";
+import Aiquiz from "./components/Aiquiz";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/attempt-quiz",
     element: <AttemptQuiz />,
+  },
+  {
+    path: "/ai-quiz",
+    element: <Aiquiz />,
   },
 ]);
 
